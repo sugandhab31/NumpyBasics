@@ -27,3 +27,27 @@ rows_product = np.prod(random_arr)
 print(rows_product)
 
 #Normalize the 3x3 matrix so all its elements fall between 0 and 1.
+print("*----Normalize the 3x3 matrix so all its elements fall between 0 and 1.----*")
+random_arr = np.random.randint(1,11, size=(3,3))
+print(random_arr)
+min_num = np.min(random_arr)
+max_num = np.max(random_arr)
+
+print(min_num, max_num)
+
+normalized_matrix = (random_arr - min_num)/(max_num - min_num)
+
+print(normalized_matrix)
+
+#Create a 5x5 matrix with random integers between 1 and 100.
+#Replace all even numbers with -1.
+#Extract all prime numbers from the matrix.
+print("*----Create a 5x5 matrix with random integers between 1 and 100.")
+print("Replace all even numbers with -1.")
+print("Extract all prime numbers from the matrix.----*")
+
+matrix = np.random.randint(1,101, size = (5,5))
+print(matrix)
+matrix[matrix%2 == 0] = -1
+print(matrix)
+print(matrix)

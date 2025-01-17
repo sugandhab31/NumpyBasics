@@ -63,3 +63,4 @@ print(random_arr)
 print("*----Replace all elements greater than 10 with the value 0.----*")
 random_arr[random_arr > 10] = 0
 print(random_arr)
+
